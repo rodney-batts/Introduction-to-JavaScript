@@ -17,7 +17,12 @@ Do the following:
 
    HINT: no function required
 */
+let votingAge = 18;
+var yourAge = prompt("Please enter your age");
 
+if (yourAge >= votingAge){
+    console.log("You can vote");}
+    else console.log("You cannot vote");
 
 
 /*
@@ -30,9 +35,12 @@ Do the following:
 
    HINT: no function required
 */
-
-
-
+let a = 20;
+let b = 30;
+if (a <= b){
+a = b-a
+}
+console.log($a);
 
 
 /*
@@ -46,8 +54,9 @@ Do the following:
    HINT: look up the Number method
 */
 
+let partyLikeIts = "1999";
 
-
+console.log(number(partyLikeIts));
 
 /*
 Task 1d - Multiply
@@ -58,8 +67,8 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
+function multiply(/*add your code here*/a, b){
+    /*add your code here*/console.log(a * b);
   }
 
 
@@ -74,8 +83,10 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(/*add your code here*/h){
+  /* d is dog years; h is human years*/
+  let d = 7h;
+    /*add your code here*/console.log("The age in dog years is " +  $d);
 }
 
 
@@ -107,8 +118,25 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-    /*add your code here*/
+function hungryDog(/*add your code here*/a, p, w){
+    /*add your code here*/if((a) && (w <=5)){
+/*a is adult dog, p is puppy, w is weight*/
+      console.log(w * .05);}
+      else if (a && (w <=10)) {
+        console.log(w * .04);}  
+      else if (a && (w <=15)){
+        console.log(w * .03);}
+      else if (a && (w > 15)){
+        console.log(w * .02); }
+        else if (!a && ((p >= 2/12)&& (p<=4/12){
+          console.log(w * .1);}
+        else if (p <= 7/12)    {
+          console.log(w * .05);}
+        else if (p <= 12){
+          console.log(w * .04); }  
+        
+      
+    }
   }
 
 
@@ -135,8 +163,51 @@ Use the game function below to do the following:
 */
 
 function game(user, computer){
-    /*add your code here*/
-}
+    /*add your code here*/if (Math.random *10 <= 3.3){
+      computerChoice = paper;
+          }
+          else if Math.random() <= 6.6 {
+            computerChoice = rock; }
+          
+          else computerChoice = scissors;
+        }
+        var choice = prompt("Please choose paper,Rock or Scissors");
+        switch(choice){
+          case "paper":
+          if ((computerChoice == "paper")&&(choice=="rock")){
+            console.log("You lose")}
+            else if ((computerChoice==paper)&&(choice=="scissors")){
+              console.log("You win")
+            }
+            else if ((computerChoice=="paper")&&(choice=="paper")){
+              console.log("It's a tie")
+            }
+          
+          
+          break;
+          case "rock":
+            if ((computerChoice == "rock")&&(choice=="scissors")){
+              console.log("You lose")}
+              else if ((computerChoice=="rock")&&(choice=="paper")){
+                console.log("You win")
+              }
+              else if ((computerChoice=="rock")&&(choice=="rock")){
+                console.log("It's a tie")
+              }
+
+
+          break;
+          case "scissors"
+          if ((computerChoice == "scissors")&&(choice=="paper")){
+            console.log("You lose")}
+            else if ((computerChoice=="scissors")&&(choice=="rock")){
+              console.log("You win")
+            }
+            else if ((computerChoice=="scissors")&&(choice=="scissors")){
+              console.log("It's a tie")
+            }
+        }
+
   
   
 
@@ -151,8 +222,11 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
+function miles(/*add your code here*/ k){
     /*add your code here*/
+    let k = prompt("enter kilometers to receive distance in miles";)
+    let m = 1.609*k;
+    console.log($k + "kilometers equals " + $m + "miles.");
   }
 
 
@@ -165,12 +239,15 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
+function feet(/*add your code here*/ cm){
     /*add your code here*/
+    let cm = prompt("Enter the number of centimeters you want to convert to feet");
+
+    console.log(4cm + "centimeters equals" + $cM *.032808 + "feet."); 
   }
  
 
-
+''
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
 // Let's Sing 99 Bottles of Soda on the Wall!
@@ -183,7 +260,11 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(/*add your code here*/){
         /*add your code here*/
-  }
+        let i= 99;
+        while ( i >= 0){
+        console.log($i + "bottles of beer on the wall," +  $i + "bottles of beer, take one down, pass it around $i-1 bottles of beer on the wall");
+          i--;}
+      }
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -202,20 +283,21 @@ Using the grade function below do the following:
 */
   
 function grade(num){
+  let num = pronpt("Enter score");
     if(num < 100 && num >= 90){
-      return 'you got an A';
+      console.log('you got an A');
     }else if(num <90 && num >= 80){
-      return 'you got a B';
+      console.log('you got a B');
     }else if(num < 80 && num >= 70){
-      return 'you got a C';
+      console.log('you got a C');
     }else if(num < 70 && num >= 60){
-      return 'you got a D';
+      console.loga('you got a D');
     }else if(num < 60){
-      return 'you got an F';
+      console.log('you got an F');
     }
   }
   
-  console.log('grade function', grade(85));
+
   
   
 
